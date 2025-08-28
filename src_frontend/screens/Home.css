@@ -1,0 +1,59 @@
+/* src/screens/Home.css */
+.home-container {
+  min-height: 100svh;                /* safe full viewport height */
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.home-header {
+  padding: 20px;
+}
+
+.logo {
+  width: 80px;
+}
+
+.home-content {
+  text-align: center;
+  color: white;
+  margin-bottom: 80px;
+}
+
+.home-content h1 {
+  font-size: 80px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.home-content h1 span {
+  color: #fdb927; /* yellow highlight */
+}
+
+.button-group {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.button-group button {
+  padding: 12px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  background-color: #fdb927;
+  color: black;
+  transition: 0.3s;
+  border-radius: 8px;
+}
+
+.button-group button:hover {
+  background-color: #ffcf40;
+}

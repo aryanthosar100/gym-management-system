@@ -1,0 +1,129 @@
+/* Base layout: same as AdminDashboard */
+.active {
+    min-height: 100svh;
+    width: 100%;
+    background: url("../assets/hero-home.png") center center / cover no-repeat;
+    color: white; /* default text white */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .active__logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 80px;
+  }
+  
+  .active__topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 16px 24px;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(4px);
+  }
+  
+  .active__brand {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .active__user {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .active__logout {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  /* Controls + stats */
+  .active__main {
+    max-width: 1100px;
+    width: 92%;
+    margin: 20px auto;
+  }
+  
+  .active__controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+  }
+  
+  .active__searchForm {
+    display: flex;
+    gap: 8px;
+  }
+  .active__searchForm input {
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: none;
+  }
+  .active__searchForm button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .active__stats {
+    display: flex;
+    gap: 12px;
+  }
+  
+  /* Table wrapper */
+  .active__tableWrap {
+    overflow-x: auto;
+    border-radius: 8px;
+  }
+  
+  /* Table itself: white bg + black text */
+  .active__table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;      /* white background */
+    color: #000;           /* black text */
+  }
+  
+  .active__table th,
+  .active__table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  .active__table th {
+    font-weight: 700;
+    background: #f0f0f0;
+  }
+  
+  .active__table tr:nth-child(even) {
+    background: #fafafa;
+  }
+  
+  /* Pager buttons */
+  .active__pager {
+    margin-top: 12px;
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+  }
+  .active__pager button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
